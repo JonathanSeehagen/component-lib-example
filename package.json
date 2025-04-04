@@ -1,0 +1,48 @@
+{
+  "name": "@jonathanseehagen/component-lib-example",
+  "version": "1.0.11",
+  "description": "Component library test",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc && babel src --out-dir lib --extensions \".ts,.tsx\"",
+    "prepare": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanSeehagen/component-lib-example"
+  },
+  "keywords": [
+    "react-native",
+    "button",
+    "component",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "nativewind": "^2.0.0 || ^3.0.0 || ^4.0.0",
+    "react": "*",
+    "react-native": "*",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@types/react": "^19.0.0",
+    "@types/react-native": "^0.72.0",
+    "babel-preset-expo": "^12.0.11",
+    "metro-react-native-babel-preset": "^0.77.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  }
+}
