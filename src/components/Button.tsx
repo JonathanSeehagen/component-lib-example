@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <Pressable
       onPress={onPress}
-      className={clsx("bg-red-700 p-4 rounded-lg items-center", className)}
+      className={clsx("bg-cyan-500 p-4 rounded-lg items-center", className)}
       {...rest}
     >
       <Text className={clsx("text-white font-bold", textClassName)}>

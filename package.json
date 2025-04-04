@@ -1,6 +1,6 @@
 {
-  "name": "@user/repository",
-  "version": "1.0.11",
+  "name": "@jonathanseehagen/component-lib-example",
+  "version": "1.0.12",
   "description": "Component library test",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/user/repository"
+    "url": "git+https://github.com/JonathanSeehagen/component-lib-example"
   },
   "keywords": [
     "react-native",
