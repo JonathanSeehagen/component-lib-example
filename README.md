@@ -4,6 +4,8 @@
 - Publicação do pacote de componentes utilizando GitHub Packages (falo sobre o AWS CodeArtifact ao final);
 - Instalação/atualização e configuração do pacote de componentes.
 
+O componente utiliza NativeWind e clsx.
+
 ## Preparação
 
 1. Clone o projeto de exemplo.
