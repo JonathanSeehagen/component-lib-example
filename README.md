@@ -1,4 +1,8 @@
-# Criando componente e publicando no Github Packages
+# 1. Criando componente e publicando no Github Packages
+
+- Processo de criação de um pacote de componentes (component library) JS/TS;
+- Publicação do pacote de componentes;
+- Instalação/atualização e configuração do pacote de componentes.
 
 ## Preparação
 
@@ -21,14 +25,14 @@
 10. Verifique agora na aba packages do seu github que o pacote esta publiciado
 11. Agora você ja pode instalar o pacote em outros projetos;
 
-## Atualizando a lib:
+## Liberar nova versão da lib:
 
 12. Altere a versão no package.json;
 13. Execute **npm run build** e um **npm publish** para publicar a atualização.
 
 ---
 
-# Usando o componente
+# 2. Usando o componente
 
 1. No projeto que você quer instalar o pacote, copie o arquivo **.npmrc** para a raiz do projeto.
 
@@ -44,6 +48,6 @@ content: [
   // Lib externa (ajuste o nome conforme o seu pacote real)
   "./node_modules/@jonathanseehagen/ui-lib-rn-test/**/*.{js,ts,jsx,tsx}",
 ],
+```
 
 Obs.: Por se tratar de uma lib que utiliza JS/TS puro, não precisa gerar a build novamente.
-```
