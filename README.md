@@ -1,7 +1,7 @@
 # 1. Criando componente e publicando no Github Packages
 
 - Processo de criação de um pacote de componentes (component library) JS/TS;
-- Publicação do pacote de componentes;
+- Publicação do pacote de componentes utilizando GitHub Packages;
 - Instalação/atualização e configuração do pacote de componentes.
 
 ## Preparação
@@ -51,3 +51,20 @@ content: [
 ```
 
 Obs.: Por se tratar de uma lib que utiliza JS/TS puro, não precisa gerar a build novamente.
+
+---
+
+As configurações do GitHub Packages vs AWS CodeArtifact são semelhantes. Ambos utilizam um arquivo de configuração **npmrc** para vincular o pacote com o domínio e tokens.
+
+## Comparação: GitHub Packages vs AWS CodeArtifact (ChatGPT)
+
+| **Característica**           | **GitHub Packages**                                       | **AWS CodeArtifact**                                      |
+| ---------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| **Integração**               | Integrado ao GitHub, facilita o uso com repositórios      | Integrado ao AWS, pode ser usado com outros serviços AWS  |
+| **Suporte a formatos**       | npm, Maven, NuGet, RubyGems, Docker, Gradle               | npm, Maven, NuGet, PyPI, Docker                           |
+| **Autenticação**             | Requer **Personal Access Token (PAT)** no `.npmrc`        | Usa **IAM roles, AWS CLI ou credenciais temporárias**     |
+| **Controle de acesso**       | Baseado em permissões do GitHub (repositório/organização) | Controle refinado via **IAM policies**                    |
+| **Custo**                    | Gratuito para repositórios públicos, pago para privados   | Pago com base em uso (armazenamento e transferências)     |
+| **Facilidade de uso**        | Simples para quem já usa GitHub                           | Requer configuração de AWS CLI e permissões IAM           |
+| **Distribuição**             | Ideal para times que já trabalham com GitHub              | Melhor para empresas que usam AWS para infraestrutura     |
+| **Velocidade de publicação** | Rápida, pois é integrada ao GitHub Actions                | Pode ter um pequeno overhead de autenticação e permissões |
