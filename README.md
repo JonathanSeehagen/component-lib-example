@@ -1,13 +1,13 @@
 # 1. Criando componente e publicando no Github Packages
 
 - Processo de criação de um pacote de componentes (component library) JS/TS;
-- Publicação do pacote de componentes utilizando GitHub Packages;
+- Publicação do pacote de componentes utilizando GitHub Packages (falo sobre o AWS CodeArtifact ao final);
 - Instalação/atualização e configuração do pacote de componentes.
 
 ## Preparação
 
 1. Clone o projeto de exemplo.
-2. Crir um repositorio no github
+2. Criar um repositório no github
 3. No package.json, Substitua o campo **name** pelo nome desejado do pacote (ex: "@user/nomedopacote"), e atualize o campo **repository.url** com a URL do repositório recém-criado.
 4. No package.json ajuste a version para 1.0.0.
 5. Rode **npm install –ignore-scripts** para instalar somente as dependencias e não rodar nenhum script;
@@ -22,7 +22,7 @@
 
 8. Execute o build do pacote: **npm run build**.
 9. Agora vamos publicar o pacote: **npm publish**.
-10. Verifique agora na aba packages do seu github que o pacote esta publiciado
+10. Verifique agora na aba packages do seu github que o pacote esta publicado
 11. Agora você ja pode instalar o pacote em outros projetos;
 
 ## Liberar nova versão da lib:
@@ -54,9 +54,9 @@ Obs.: Por se tratar de uma lib que utiliza JS/TS puro, não precisa gerar a buil
 
 ---
 
-As configurações do GitHub Packages vs AWS CodeArtifact são semelhantes. Ambos utilizam um arquivo de configuração **npmrc** para vincular o pacote com o domínio e tokens.
+As configurações do GitHub Packages vs AWS CodeArtifact são semelhantes. Ambos utilizam um arquivo de configuração **.npmrc** para vincular o pacote com o domínio e tokens.
 
-## Comparação: GitHub Packages vs AWS CodeArtifact (ChatGPT)
+Abaixo segue uma tabela para comparação: GitHub Packages vs AWS CodeArtifact
 
 | **Característica**           | **GitHub Packages**                                       | **AWS CodeArtifact**                                      |
 | ---------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
