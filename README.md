@@ -32,13 +32,13 @@
 
 1. No projeto que você quer instalar o pacote, copie o arquivo **.npmrc** para a raiz do projeto.
 
-Sobre os tokens utilizados no .npmrc. Podem ser utilizados o mesmo token gerano no GitHub, porem podemos gerar um token somente para leitura e utilizar esse token no projeto que importa a lib. (questões de segurança).
+- Sobre os tokens utilizados no .npmrc. Podem ser utilizados o mesmo token gerano no GitHub, porem podemos gerar um token somente para leitura e utilizar esse token no projeto que importa a lib. (questões de segurança).
 
 2. Para instalar/atualizar o pacote no seu projeto, rode um npm **install @user/nomedopacote**.
 
 3. Adicionar o caminho da pasta da lib instalada no content do **tailwind.config.js:**:
 
-```json
+```js
 content: [
   "./src/**/*.{ts,tsx}",
   // Lib externa (ajuste o nome conforme o seu pacote real)
